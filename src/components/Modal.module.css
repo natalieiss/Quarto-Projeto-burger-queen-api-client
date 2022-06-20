@@ -1,0 +1,73 @@
+/* .modal {
+    background-color: #383659;
+    color: white;
+    width: 20rem;
+    height: 25vh;
+    position: absolute;
+    top: 20rem;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    border: solid black;
+    box-shadow: 4.8px 4.8px 4.8px rgba(0, 0, 0, 0.25);
+}
+
+.container_modal {
+    text-align: center;
+    justify-items: center;
+
+}
+
+.close_modal {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    align-items: center;
+    right: calc(-100% + 25px);
+    top: -35px;
+}
+
+.close_modal::before,
+.close_modal::after {
+    content: ' ';
+    position: absolute;
+    width: 2.5px;
+    height: 24px;
+    background-color: white;
+}
+
+.close_modal::before {
+    transform: rotate(45deg);
+}
+
+.close_modal::after {
+    transform: rotate(135deg);
+}
+
+.content_modal {
+    align-items: center;
+    font-size: 1.4rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 40px;
+}
+
+/* @media screen and (min-width: 768px) {
+    .modal {
+        left: 13rem;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .modal {
+        left: 33rem;
+
+    }
+} */

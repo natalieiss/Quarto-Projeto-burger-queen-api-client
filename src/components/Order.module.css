@@ -1,0 +1,30 @@
+@import '../layout/variables.css';
+
+.order_card {
+    background-color: #91CDF2;
+    border-radius: 10px;
+    box-shadow: 4.8px 4.8px 4.8px rgb(0 0 0 / 25%);
+    list-style: none;
+    margin: 20px 0 10px 13px;
+    width: 40rem;
+    padding: 20px;
+    height: 30vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.title_list {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.product_list {
+    padding: 0 0 10px 5px;
+}
+
+.items_list,
+.product_list,
+.title_list {
+    font-size: 2rem;
+    font-family: 'actionManBold';
+}

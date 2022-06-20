@@ -1,0 +1,41 @@
+.main_kitchen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main_kitchen {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-auto-flow: dense;
+        overflow-y: visible;
+        overflow-x: hidden;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 85vh;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1128px) {
+    .main_kitchen {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-auto-flow: dense;
+        overflow-y: visible;
+        overflow-x: hidden;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 81vh;
+        justify-content: center;
+        grid-gap: 25px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 479px) {}
+
+@media (min-width: 480px) and (max-width: 767px) {}
