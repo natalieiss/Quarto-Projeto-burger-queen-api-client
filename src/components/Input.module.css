@@ -1,7 +1,8 @@
 @import '../layout/variables.css';
 
 .input,
-.input_register {
+.input_register,
+.input_search {
     border-radius: 10px;
     border: 1px solid #BF1736;
     background-color: #D99E30;
@@ -11,10 +12,21 @@
 }
 
 .input::placeholder,
-.input_register::placeholder {
+.input_register::placeholder,
+.input_search::placeholder {
     color: black;
     font-family: 'actionManBold';
 }
+
+.input_name_client {
+    /* a fazer na pagina hallattendance */
+}
+
+.input_search {
+    padding: 12px;
+    margin: 10px;
+}
+
 
 @media (min-width: 320px) and (max-width: 479px) {
     .input {

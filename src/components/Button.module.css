@@ -1,3 +1,5 @@
+@import '../layout/variables.css';
+
 .button_enter,
 .button_register,
 .button_logout {
@@ -25,6 +27,43 @@
     background-color: #2669BF;
 }
 
+.button_logout {
+    position: relative;
+    left: 200%;
+}
+
+.button_add {
+    cursor: pointer;
+    border-radius: 3px;
+    transform: scale(1);
+    transition: 0.5s;
+    width: 15rem;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'actionManBold';
+    font-size: 2rem;
+    align-items: center;
+    justify-self: center;
+    background-color: #BF1736;
+}
+
+.hall_attendance_menu {
+    font-size: 2rem;
+    font-family: 'lulaBorgesNegrito';
+    padding: 10px;
+    margin: 0 15px;
+    background-color: #D99E30;
+    box-shadow: 0px 4.8px 4.8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.hall_attendance_menu:hover {
+    background-color: #ebc887;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
     .button_enter {
         height: 4rem;
@@ -35,5 +74,11 @@
         height: 3.2rem;
         width: 80%;
         margin-bottom: 2px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .button_logout {
+        left: 150%;
     }
 }
