@@ -2,7 +2,9 @@
 
 .button_enter,
 .button_register,
-.button_logout {
+.button_logout,
+.button_status {
+    cursor: pointer;
     display: grid;
     background-color: #708c32;
     color: black;
@@ -22,12 +24,14 @@
 
 .button_enter:hover,
 .button_register:hover,
-.button_logout:hover {
+.button_logout:hover,
+.button_status:hover {
     transform: scale(1.2);
     background-color: #2669BF;
 }
 
 .button_logout {
+    cursor: pointer;
     position: relative;
     left: 200%;
 }
@@ -64,6 +68,35 @@
     background-color: #ebc887;
 }
 
+.button_finalize {
+    cursor: pointer;
+    background-color: #BF1736;
+    color: black;
+    border: 1px solid #BF1736;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 0.5s;
+    width: 15rem;
+    height: 6rem;
+    margin-top: 20px;
+    font-family: 'actionManBold';
+    font-size: 2rem;
+}
+
+.button_finalize:hover {
+    transform: scale(1.2);
+    background-color: #2669BF;
+}
+
+.button_qtd {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin: 0 5px 0 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
     .button_enter {
         height: 4rem;
@@ -79,6 +112,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .button_logout {
-        left: 150%;
+        left: 100%;
     }
 }

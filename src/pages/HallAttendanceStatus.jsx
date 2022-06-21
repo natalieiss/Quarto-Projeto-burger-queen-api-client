@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import NavStatus from "../components/NavStatus";
 import { Order, OrderProduct } from "../components/Order";
 import Modal from "../components/Modal";
+import styles from './HallAttendanceStatus.module.css';
 
 
 function Status() {
@@ -37,7 +38,7 @@ function Status() {
             <NavStatus firstLink='/HallAttendance' nameFirstLink='Novo Pedido' secondLink='/HallAttendanceStatus' nameSecondLink='Pedidos Prontos'
                 thirdLink='/Summary' nameThirdLink='Histórico'
             />
-            <section>
+            <section className={styles.status_main}>
                 {orders.map((item, index) => {
                     const updateToProcessing = item.status === "deliver"
                     const infosProduct = item.Products.map((product) => {

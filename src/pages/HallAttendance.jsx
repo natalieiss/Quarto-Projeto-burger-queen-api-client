@@ -67,7 +67,6 @@ function HallAttendance() {
             ...clientInf,
             [e.target.id]: e.target.value
         })
-        console.log(clientInf)
     }
 
     function chooseOrder(item) {
@@ -139,7 +138,7 @@ function HallAttendance() {
         if (clientInf.name === "" || clientInf.table === "") {
             console.log(clientInf.table, clientInf.name)
             setIsModalVisible(true)
-            setErrorMessage("Campos incompletos.") //chama os erros cado a opção de nome ou mesa estejam vazios
+            setErrorMessage("Campos incompletos.")
         } else if (orderList.length === 0) {
             setIsModalVisible(true)
             setErrorMessage("Não há produtos no pedido.")
@@ -203,7 +202,7 @@ function HallAttendance() {
                     <ul className={styles.container_products}>
                         {productList.map((item) => {
                             return (
-                                <div key={item.id}>
+                                <div className={styles.products} key={item.id}>
                                     <ProductCard
                                         name={item.name}
                                         image={item.image}
@@ -238,8 +237,8 @@ function HallAttendance() {
                             })
                             }
                         </ul>
-                        <p>Total: {sum()}</p>
-                        <div>
+                        <p className={styles.total}>Total: {sum()}</p>
+                        <div className={styles.finalize}>
                             <Button customClass='button_finalize' clickFunction={getSubmit} type='button' children='Finalizar Pedido' />
                         </div>
                     </section>

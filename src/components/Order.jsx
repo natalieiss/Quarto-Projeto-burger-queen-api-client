@@ -9,16 +9,16 @@ export const Order = ({ status, id, nameClient, table, createDate, finished,
         <li className={styles.order_card}>
             <section>
                 {status === "pending" && (
-                    <div>Pendente</div>
+                    <div className={styles.current_state}>Pendente</div>
                 )}
                 {status === "processing" && (
-                    <div>Preparando</div>
+                    <div className={styles.current_state}>Preparando</div>
                 )}
                 {status === "deliver" && (
-                    <div>Pronto para entregar</div>
+                    <div className={styles.current_state}>Pronto para entregar</div>
                 )}
                 {status === "served" && (
-                    <div>Entregue</div>
+                    <div className={styles.current_state}>Entregue</div>
                 )}
                 <section>
                     <p className={styles.items_list}><strong className={styles.items_list}>{id}</strong></p>
@@ -31,17 +31,17 @@ export const Order = ({ status, id, nameClient, table, createDate, finished,
                     <div>{orderProducts}</div>
                 </section>
             </section>
-            <section>
+            <section className={styles.container_button_status}>
                 {!summaryPage ?
                     <>
                         {status === "pending" && (
-                            <Button children='Preparar' clickFunction={updateStatus} />
+                            <Button customClass='button_status' children='Preparar' clickFunction={updateStatus} />
                         )}
                         {status === "processing" && (
-                            <Button children='Pronto' clickFunction={readyOrder} />
+                            <Button customClass='button_status' children='Pronto' clickFunction={readyOrder} />
                         )}
                         {status === "deliver" && (
-                            <Button children='Entregar' clickFunction={readyForDelivery} />
+                            <Button customClass='button_status' children='Entregar' clickFunction={readyForDelivery} />
                         )}
                     </> : ""
                 }

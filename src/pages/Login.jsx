@@ -19,10 +19,8 @@ function Login() {
 
     function loginUser(e) {
         e.preventDefault();
-        //console.log(`Usuário ${email} foi cadastrado com a senha: ${password}`)
         logInt(email, password)
             .then((response) => {
-                console.log(response)
                 if (response.status === 200) {
                     return response.json();
                 }
@@ -30,10 +28,8 @@ function Login() {
                 return response.json()
             })
             .then((data) => {
-                console.log(data)
                 if (!data.code) {
                     login(data.token, data.role);
-                    console.log(data.role)
                     navigate(data.role === 'attendance' ? '/HallAttendance' : '/HallKitchen');
                 }
                 return data

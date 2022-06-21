@@ -69,7 +69,7 @@ function HallKitchen() {
                 })}
             </section>
             {isModalVisible ?
-                <Modal className='modal active' onClose={() => setIsModalVisible(false)}>Não há pedidos para serem preparados</Modal> : null
+                <Modal className='modalactive' onClose={() => setIsModalVisible(false)}>Não há pedidos para serem preparados</Modal> : null
             }
         </div>
     )

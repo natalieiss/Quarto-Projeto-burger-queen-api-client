@@ -22,26 +22,23 @@ function Summary() {
             try {
                 let searchId = [...orders];
                 const response = await getAllOrders();
-                // console.log(response)
                 if (search === "") {
-                    // console.log("Entrei")
                     searchId = response.sort((a, b) => {
                         return b.id - a.id;
                     })
                 } else {
                     searchId = response.filter((order) => {
+                        // eslint-disable-next-line eqeqeq
                         return search == order.id;
                     })
-                    // console.log(searchId)
                 }
                 setOrders(searchId)
-                // console.log(orders)
             } catch (error) {
                 return error
             }
         }
         summary()
-    }, [orders])
+    }, [orders, search])
 
     const roleKitchen = getRole() === "kitchen";
 

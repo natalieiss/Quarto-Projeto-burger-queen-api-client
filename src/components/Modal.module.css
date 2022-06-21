@@ -1,44 +1,43 @@
-/* .modal {
-    background-color: #383659;
-    color: white;
-    width: 20rem;
+@import '../layout/variables.css';
+
+.modal {
+    background-color: #BF1736;
+    color: black;
+    width: 40rem;
     height: 25vh;
     position: absolute;
-    top: 20rem;
+    top: 45rem;
+    margin-left: 80rem;
     z-index: 10;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-radius: 20px;
     border: solid black;
-    box-shadow: 4.8px 4.8px 4.8px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
 }
 
-.container_modal {
+.content_modal {
+    align-items: center;
+    font-family: 'actionManBold';
+    font-size: 3rem;
+    padding: 25px;
     text-align: center;
-    justify-items: center;
-
 }
 
 .close_modal {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 32px;
-    height: 32px;
     cursor: pointer;
-    display: flex;
     position: relative;
     align-items: center;
-    right: calc(-100% + 25px);
-    top: -35px;
+    right: calc(-90%);
+    top: -30px;
 }
 
 .close_modal::before,
 .close_modal::after {
     content: ' ';
     position: absolute;
-    width: 2.5px;
+    width: 5px;
     height: 24px;
     background-color: white;
 }
@@ -51,23 +50,31 @@
     transform: rotate(135deg);
 }
 
-.content_modal {
-    align-items: center;
-    font-size: 1.4rem;
-    font-family: 'Rubik', sans-serif;
-    margin-bottom: 40px;
-}
-
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .modal {
-        left: 13rem;
+        top: 50rem;
+        margin-left: 50rem;
+    }
 
+    .close_modal {
+        cursor: pointer;
+        position: relative;
+        align-items: center;
+        right: calc(-85%);
+        top: -70px;
     }
 }
 
-@media screen and (min-width: 1024px) {
+/* @media (min-width: 480px) and (max-width: 767px) {
     .modal {
         left: 33rem;
+    }
 
+    
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .modal {
+        left: 33rem;
     }
 } */

@@ -17,3 +17,15 @@
     color: red;
     align-items: center
 }
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .header {
+        display: flex;
+        align-items: center;
+        margin-top: 0%;
+        width: 100%;
+        height: 100px;
+        gap: 50px;
+        justify-content: center;
+    }
+}

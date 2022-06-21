@@ -21,8 +21,6 @@
 
 .root {
     display: grid;
-    /* grid-template-rows: 90%h 10%; */
     grid-template-rows: 95vh 5vh;
-
     grid-template-columns: 1fr;
 }
