@@ -23,6 +23,8 @@
 
 Quarto projeto desenvolvido no bootcamp de front-end da Laboratoria. Neste projeto desenvolvemos uma aplicação web na modalidade _mobile first_ (_tablet_) para aprimorar e agilizar o atendimento de uma hamburgueria. Através desta aplicação é possível que os funcionários do setor de atendimento e cozinha gerenciem os pedidos de seus clientes.
 
+AVISO IMPORTANTE - O link contendo o deploy do projeto, que encontra-se hospedado no Heroku, está apresentando demora no carregamento da página. Contudo, está funcionando corretamente. Por favor, clique no link e aguarde alguns minutos para que seja carregado o conteúdo.
+
 ---
 ## 2. Resumo do projeto
 
