@@ -34,7 +34,7 @@ A cozinha recebe o pedido enviado pelo atendimento para inciar seu preparo e, lo
 Na aplicação haverá uma aba de histórico de pedidos onde os mesmos permanecerão sendo exibidos, mesmo que finalizados, ainda portando o ID, duração do preparo e entrega.
 
 
-Clique [aqui](https://natalieiss.github.io/Terceiro-Projeto-Social-Network) para conferir o resultado da aplicação. 
+Clique [aqui](burger-heroes.herokuapp.com/) para conferir o resultado da aplicação. 
 
 Se preferir não se cadastrar nesta aplicação web, será possível realizar o _login_ através dos _e-mails_ e senhas previamente cadastrados:
 
