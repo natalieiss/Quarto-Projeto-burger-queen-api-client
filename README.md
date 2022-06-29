@@ -33,9 +33,6 @@ Por meio desta aplicação web é possível que o atendimento adicione pedidos a
 A cozinha recebe o pedido enviado pelo atendimento para inciar seu preparo e, logo que o pedido estiver pronto, envia-lo de volta ao atendimento para que seja realizada a entrega.
 Na aplicação haverá uma aba de histórico de pedidos onde os mesmos permanecerão sendo exibidos, mesmo que finalizados, ainda portando o ID, duração do preparo e entrega.
 
-
-Clique [aqui](burger-heroes.herokuapp.com/) para conferir o resultado da aplicação. 
-
 Se preferir não se cadastrar nesta aplicação web, será possível realizar o _login_ através dos _e-mails_ e senhas previamente cadastrados:
 
 Para acessar o atendimento - Email: atendimento@burgerheroes.com Senha: 123456
